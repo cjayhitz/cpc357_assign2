@@ -2,6 +2,10 @@
 Overview
 This repository contains the implementation files for a Smart Environment Monitoring System designed to monitor environmental conditions in a data center. It leverages IoT sensors, Google Cloud Platform (GCP) services, and various processing pipelines to ensure optimal data center operation.
 
+### Authors
+1. Veytri Yogan
+2. Naqib Naqiuddin Iswardi
+
 ### Files and Directories
 Source Code:
 Script.py
@@ -49,13 +53,9 @@ Prerequisites
 5. Use Looker Studio for data visualization.
 
 ### Security Measures
-Data Encryption: TLS for data in transit; GCP's KMS for data at rest.
-Access Control: IAM roles for restricting access to resources.
-Data Masking: Sensitive data anonymized before visualization.
-
-### Authors
-Veytri Yogan
-Naqib Naqiuddin Iswardi
+1. Data Encryption: TLS for data in transit; GCP's KMS for data at rest.
+2. Access Control: IAM roles for restricting access to resources.
+3. Data Masking: Sensitive data anonymized before visualization.
 
 ### License
 This repository is released under MIT License.
