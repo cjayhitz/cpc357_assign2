@@ -19,31 +19,35 @@ Arduino code for interfacing with IoT sensors (temperature, humidity, PIR, light
 Data
 dummy_data_latest.csv
 Sample processed data file for testing and visualization purposes.
+
 Infrastructure
 dev.tf
 Terraform configuration file for deploying GCP resources, including Cloud Pub/Sub, Cloud Functions, and BigQuery.
+
 Documentation
 Data_Visualization.pdf
-Generated visualization report demonstrating insights from the monitored data.
+Generated visualization report demonstrating insights from the monitored data via Google Looker Studio.
 
 ### Setup Instructions
 Prerequisites
-IoT Sensors: Temperature, humidity, PIR, and light sensors connected to an Arduino-compatible board.
-Google Cloud Platform Account: Access to GCP services such as Cloud Storage, Pub/Sub, Dataflow, and BigQuery.
-Python Environment: Ensure Python 3.x is installed with necessary dependencies.
+1. IoT Sensors: Temperature, humidity, PIR, and light sensors connected to an Arduino-compatible board.
+2. Google Cloud Platform Account: Access to GCP services such as Cloud Storage, Pub/Sub, Dataflow, and BigQuery.
+3. Python Environment: Ensure Python 3.x is installed with necessary dependencies.
 
 ### Deployment
-Hardware Setup: Flash hardware.ino to your IoT device and connect the sensors.
-Terraform Setup: Run dev.tf to set up the required GCP resources:
-Cloud Functions: Deploy main_conversion.py as a Cloud Function triggered by data uploads to a Cloud Storage bucket.
-Pub/Sub Setup: Use pub_sub.py to create and manage Pub/Sub topics for data transmission.
-MongoDB: Execute Script.py to manage data ingestion into MongoDB.
-Running the Application
+1. Hardware Setup: Flash hardware.ino to your IoT device and connect the sensors.
+2. Terraform Setup: Run dev.tf to set up the required GCP resources:
+3. Cloud Functions: Deploy main_conversion.py as a Cloud Function triggered by data uploads to a Cloud Storage bucket.
+4. Pub/Sub Setup: Use pub_sub.py to create and manage Pub/Sub topics for data transmission.
+5. MongoDB: Execute Script.py to manage data ingestion into MongoDB.
+
+@@@ Running the Application
 Start the IoT sensors and monitor data flow to the MQTT broker.
 Ingest data using Script.py.
 Trigger data transformations and load data into BigQuery using the Cloud Function and Dataflow pipelines.
 Use Looker Studio for data visualization.
-Security Measures
+
+### Security Measures
 Data Encryption: TLS for data in transit; GCP's KMS for data at rest.
 Access Control: IAM roles for restricting access to resources.
 Data Masking: Sensitive data anonymized before visualization.
