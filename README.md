@@ -41,11 +41,12 @@ Prerequisites
 4. Pub/Sub Setup: Use pub_sub.py to create and manage Pub/Sub topics for data transmission.
 5. MongoDB: Execute Script.py to manage data ingestion into MongoDB.
 
-@@@ Running the Application
-Start the IoT sensors and monitor data flow to the MQTT broker.
-Ingest data using Script.py.
-Trigger data transformations and load data into BigQuery using the Cloud Function and Dataflow pipelines.
-Use Looker Studio for data visualization.
+### Running the Application
+1. Start the IoT sensors and monitor data flow to the MQTT broker.
+2. Ingest data using Script.py.
+3. Trigger data transformations and load data into BigQuery using the Cloud Function and Dataflow pipelines.
+4. Data warehousing with Google BigQuery
+5. Use Looker Studio for data visualization.
 
 ### Security Measures
 Data Encryption: TLS for data in transit; GCP's KMS for data at rest.
