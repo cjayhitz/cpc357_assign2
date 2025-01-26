@@ -3,28 +3,28 @@ Overview
 This repository contains the implementation files for a Smart Environment Monitoring System designed to monitor environmental conditions in a data center. It leverages IoT sensors, Google Cloud Platform (GCP) services, and various processing pipelines to ensure optimal data center operation.
 
 ### Files and Directories
-Source Code
+Source Code:
 Script.py
 Python script for interacting with MongoDB, managing sensor data ingestion, and basic processing tasks.
 
-main_conversion.py
+main_conversion.py:
 Cloud Function script for transforming raw JSON data into structured CSV format.
 
-pub_sub.py
+pub_sub.py:
 Script to manage Cloud Pub/Sub topics and handle data flow between ingestion and processing pipelines.
 
-hardware.ino
+hardware.ino:
 Arduino code for interfacing with IoT sensors (temperature, humidity, PIR, light sensors) and transmitting data.
 
-Data
+Data:
 dummy_data_latest.csv
 Sample processed data file for testing and visualization purposes.
 
-Infrastructure
+Infrastructure:
 dev.tf
 Terraform configuration file for deploying GCP resources, including Cloud Pub/Sub, Cloud Functions, and BigQuery.
 
-Documentation
+Documentation:
 Data_Visualization.pdf
 Generated visualization report demonstrating insights from the monitored data via Google Looker Studio.
 
