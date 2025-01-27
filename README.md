@@ -6,6 +6,11 @@ This repository contains the implementation files for a Smart Environment Monito
 1. Veytri Yogan
 2. Naqib Naqiuddin Iswardi
 
+### Data
+1. iot_data.json - Data ingested into MongoDB (on GCP) from hardware (sources).
+2. iot_data.csv - Converted data (after running Google Cloud Function).
+3. dummy_data_latest.csv - Sample processed data file for testing and visualization purposes.
+
 ### Files and Directories
 Source Code:
 Script.py
@@ -19,10 +24,6 @@ Script to manage Cloud Pub/Sub topics and handle data flow between ingestion and
 
 hardware.ino:
 Arduino code for interfacing with IoT sensors (temperature, humidity, PIR, light sensors) and transmitting data.
-
-Data:
-dummy_data_latest.csv
-Sample processed data file for testing and visualization purposes.
 
 Infrastructure:
 dev.tf
