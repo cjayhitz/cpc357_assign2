@@ -16,7 +16,7 @@ Source Code:
 Script.py
 Python script for interacting with MongoDB, managing sensor data ingestion, and basic processing tasks.
 
-main_conversion.py (CloudFundtion):
+main_conversion.py (CloudFunction):
 Cloud Function script for transforming raw JSON data into structured CSV format.
 
 pub_sub.py (with MQTT for demo purposes only):
